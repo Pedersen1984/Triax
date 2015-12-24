@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TDX>
+  <UNIT>
+    <OUTPUTDIRECTORY value="N:\fabrik\pta-e\TDX Workshop\FR 2011 TDX\FR 2011 TDX.xlsx"/>
+    <NAMES>
+      <NAME value="TA"/>
+      <NAME value="NJJ"/>
+      <NAME value="LEH"/>
+      <NAME value="LUR"/>
+    </NAMES>
+    <FAULTS>
+      <FAULT value="Mangler"/>
+      <FAULT value="Tomstone"/>
+      <FAULT value="Minus lodning"/>
+      <FAULT value="Montage"/>
+      <FAULT value="Defekt"/>
+      <FAULT value="Kortslutning"/>
+    </FAULTS>
+    <MODULES>
+      <TDX_CONTROLLER>
+        <STOCKNUMBER value="492000"/>
+        <DIAGRAM>
+          <FOLDER value="N:\fabrik\Arkiv\Arkiv-E\492000"/>
+          <FILENAME value="492000D - TDX CONTROLLER BOARD.pdf"/>
+          <REFFILE>
+            <FILENAME value="492000D - TDX Controller Board.XLS"/>
+            <PLACEMENTCOLOUMN value="5"/>
+            <VALUECOLOUMN value="6"/>
+            <COMPONENTSTOCKNUMBER value="2"/>
+            <STARTROW value="6"/>
+          </REFFILE>
+        </DIAGRAM>
+        <COMPONENT>
+          <FOLDER value="N:\fabrik\Arkiv\Arkiv-E\481220\PTA"/>
+          <TOPPLACEMENT value="ASSYDRAWING-TOP.pdf"/>
+          <BOTTOMPLACEMENT value="ASSYDRAWING-BOT.pdf"/>
+        </COMPONENT>
+      </TDX_CONTROLLER>
+      <BACKPLANE>
+        <STOCKNUMBER value="492011"/>
+        <DIAGRAM>
+          <FOLDER value="N:\fabrik\Arkiv\Arkiv-E\492011"/>
+          <FILENAME value="492011 - tdx backplane mkii.pdf"/>
+          <REFFILE>
+            <FILENAME value="492011C - TDX BackPlane MkII.XLS"/>
+            <PLACEMENTCOLOUMN value="5"/>
+            <VALUECOLOUMN value="6"/>
+            <COMPONENTSTOCKNUMBER value="2"/>
+            <STARTROW value="6"/>
+          </REFFILE>
+        </DIAGRAM>
+        <COMPONENT>
+          <FOLDER value="N:\fabrik\Arkiv\Arkiv-E\481241\481241C - PTA"/>
+          <TOPPLACEMENT value="ASSYDRAWING-TOP.pdf"/>
+          <BOTTOMPLACEMENT value=""/>
+        </COMPONENT>
+      </BACKPLANE>
+      <DVB-S>
+        <STOCKNUMBER value="492020"/>
+        <DIAGRAM>
+          <FOLDER value="N:\fabrik\Arkiv\Arkiv-E\492020"/>
+          <FILENAME value="492020-692820 MKIII D-00.pdf"/>
+          <REFFILE>
+            <FILENAME value="492020-s_MKIII_REF D-00_04122014.xlsx"/>
+            <PLACEMENTCOLOUMN value="1"/>
+            <VALUECOLOUMN value="3"/>
+            <COMPONENTSTOCKNUMBER value="2"/>
+            <STARTROW value="9"/>
+          </REFFILE>
+        </DIAGRAM>
+        <COMPONENT>
+          <FOLDER value="N:\fabrik\Arkiv\Arkiv-E\481224\PTA"/>
+          <TOPPLACEMENT value="492020 ASSYTOP.pdf"/>
+          <BOTTOMPLACEMENT value=""/>
+        </COMPONENT>
+      </DVB-S>
+      <PAL_FTA>
+        <STOCKNUMBER value="492050"/>
+        <DIAGRAM>
+          <FOLDER value="N:\fabrik\Arkiv\Arkiv-E\492052"/>
+          <FILENAME value="492052_F-02_06012015.pdf"/>
+          <REFFILE>
+            <FILENAME value="492052-S_F-02_REF_06012015.xlsx"/>
+            <PLACEMENTCOLOUMN value="1"/>
+            <VALUECOLOUMN value="3"/>
+            <COMPONENTSTOCKNUMBER value="2"/>
+            <STARTROW value="9"/>
+          </REFFILE>
+        </DIAGRAM>
+        <COMPONENT>
+          <FOLDER value="N:\fabrik\Arkiv\Arkiv-E\481230\PTA"/>
+          <TOPPLACEMENT value="ASSYDRAWING-TOP.pdf"/>
+          <BOTTOMPLACEMENT value="ASSYDRAWING-BOT.pdf"/>
+        </COMPONENT>
+      </PAL_FTA>
+      <TDH_CONTROLLER>
+        <STOCKNUMBER value="692800"/>
+        <DIAGRAM>
+          <FOLDER value="N:\fabrik\Arkiv\Arkiv-E\492000"/>
+          <FILENAME value="492000D - TDX CONTROLLER BOARD.pdf"/>
+          <REFFILE>
+            <FILENAME value="492000D - TDX Controller Board.XLS"/>
+            <PLACEMENTCOLOUMN value="5"/>
+            <VALUECOLOUMN value="6"/>
+            <COMPONENTSTOCKNUMBER value="2"/>
+            <STARTROW value="6"/>
+          </REFFILE>
+        </DIAGRAM>
+        <COMPONENT>
+          <FOLDER value="N:\fabrik\Arkiv\Arkiv-E\481225\PTA"/>
+          <TOPPLACEMENT value="ASSYDRAWING-TOP.pdf"/>
+          <BOTTOMPLACEMENT value="ASSYDRAWING-BOT.pdf"/>
+        </COMPONENT>
+      </TDH_CONTROLLER>
+    </MODULES>
+  </UNIT>
+</TDX>
+

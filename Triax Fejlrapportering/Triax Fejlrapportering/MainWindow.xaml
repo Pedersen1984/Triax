@@ -1,0 +1,25 @@
+﻿<Window x:Class="Triax_Fejlrapportering.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="285" Width="472" ResizeMode="CanMinimize" Topmost="True" Icon="TDX-TDH logo.ico" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,0">
+        <ComboBox x:Name="Navnbox" HorizontalAlignment="Left" Margin="30,23,0,0" VerticalAlignment="Top" Width="121" Height="21" TabIndex="1"/>
+        <ComboBox x:Name="VNummer" HorizontalAlignment="Left" Margin="30,63,0,0" VerticalAlignment="Top" Width="121" Height="21" ToolTip="Angiv Vare" TabIndex="4"/>
+        <ComboBox x:Name="ÅrsagBox" HorizontalAlignment="Left" Margin="174,23,0,0" VerticalAlignment="Top" Width="121" Height="21" ToolTip="Angiv hvilken type fejl det er" Padding="4,3,4,0" TabIndex="8"/>
+        <Slider x:Name="TidSlider" HorizontalAlignment="Left" Margin="30,107,0,0" VerticalAlignment="Top" Width="121" SmallChange="5" LargeChange="30" Maximum="240" AutoToolTipPlacement="TopLeft" ToolTip="Angiv den tid reperationen har taget" TickFrequency="5" IsSnapToTickEnabled="True" TabIndex="6"/>
+        <TextBox x:Name="Notebox" HorizontalAlignment="Left" Margin="174,63,0,0" VerticalAlignment="Top" Width="121" Height="139" Text="Noter" ToolTip="Angiv eventuelle noter, og ekstra oplysninger om fejlen" ScrollViewer.CanContentScroll="True" TextWrapping="Wrap" TabIndex="12"/>
+        <TextBox x:Name="KompBox" HorizontalAlignment="Left" Margin="318,23,0,0" VerticalAlignment="Top" Width="121" Height="21" Text="Komponent placering" ToolTip="Angiv hvilken komponent der fejler" Padding="0" TabIndex="10" AutoWordSelection="True" CharacterCasing="Upper"/>
+        <Label Content="Navn" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Height="13" Padding="0"/>
+        <Label Content="Varenavn" HorizontalAlignment="Left" Margin="30,45,0,0" VerticalAlignment="Top" Height="13" Padding="0"/>
+        <Label Content="Tid" HorizontalAlignment="Left" Margin="30,89,0,0" VerticalAlignment="Top" Height="13" Padding="0"/>
+        <Label Content="Årsag" HorizontalAlignment="Left" Margin="174,5,0,0" VerticalAlignment="Top" Height="18" Padding="0"/>
+        <CheckBox x:Name="gemnavn" Content="" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Fejlsøg" Content="Hent diagram" HorizontalAlignment="Left" Margin="174,0,0,13" VerticalAlignment="Bottom" Width="121"/>
+        <Button x:Name="Hentbutton" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="30,0,0,13" Width="121" Height="21" Content="Hent PDF" ToolTip="Åben komponent placering, og varenummersøgningsboks"/>
+        <CheckBox x:Name="gembox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="30,0,0,63" Width="121" Height="16" Content="Behold tekst" ToolTip="Klik her for at beholde valgene i boksene" TextOptions.TextHintingMode="Animated" TabIndex="13" />
+        <CheckBox x:Name="gemvare" Content="" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="tidstart" Height="22" Width="21" Margin="0,250,327,0" Visibility="Hidden" HorizontalAlignment="Right" VerticalAlignment="Top" Source="fejllogo.ico"/>
+        <Button Content="Start/stop tid" HorizontalAlignment="Left" Margin="30,134,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnSave" HorizontalAlignment="Left" Margin="318,0,0,13" VerticalAlignment="Bottom" Width="121" Height="21" Content="Gem" IsDefault="True" ToolTip="Gem data i Excel dokumentet" TabIndex="14" Click="btnSave_Click"/>
+    </Grid>
+</Window>
