@@ -166,7 +166,38 @@ namespace Triax_Fejlrapportering
         private void Fejlsøg_Click(object sender, EventArgs e)
         {
             Products myProduct = xml.products.Find(p => p.ProductName == VNummer.SelectedItem.ToString());
-            Process.Start(myProduct.DiagramPath);
+            if (!File.Exists(myProduct.DiagramPath))
+            {
+                Process.Start(myProduct.DiagramPath);
+            }
+            else
+            {
+                string newfile;
+                OpenFileDialog fd = new OpenFileDialog();
+                fd.Filter = "Excel Files (.xlsx; .xls)|*.xlsx; *.xls|All Files (*.*)|*.*";
+                fd.AutoUpgradeEnabled = true;
+                fd.AddExtension = true;
+                fd.InitialDirectory = myProduct.Stockfold;
+                fd.Title = "Vælg ny fil til diagram";
+                fd.ShowDialog();
+                newfile = fd.SafeFileName;
+                XDocument doc = XDocument.Load(xml.startupfile);
+                XElement update = doc.Element("MODULES");
+                foreach (XElement element in update.Elements("MODULE"))
+                {
+                    if (string.Equals(element.Attribute("value").Value, myProduct.ProductName))
+                    {
+                        foreach (XElement component in element.Elements("DIAGRAM"))
+                        {
+                            update.ReplaceWith(
+                            new XElement("FILENAME",
+                            new XAttribute("value", newfile)));
+                        }
+                    }
+                }
+
+                doc.Save(xml.startupfile);
+            }
         }
 
         public bool timespent = false;
